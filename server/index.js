@@ -12,4 +12,6 @@ var config = require('./config/env')( process.env )
 
 require('./routes/index')( server );
 
+require('./config/sockets')( server );
+
 module.exports = server;
